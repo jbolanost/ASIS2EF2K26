@@ -13,11 +13,10 @@ namespace CapaModelo_Inventario_Logistica.Entidades
 {
     public class ClsTipoMovimiento
     {
-        public int Pk_TipoMovimiento { get; set; }
-        public string NombreTipoMovimiento { get; set; }
-        public string DescripcionTipoMovimiento { get; set; }
-        public string SignoTipoMovimiento { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public int pk_idCliente { get; set; }
+        public string nombreCliente { get; set; }
+        public string direccionCliente { get; set; }
+        public string telefonoCliente { get; set; }
+        public int estadoCliente { get; set; }
     }
 }

@@ -17,12 +17,11 @@ namespace CapaControlador_Inventario_Logistica.Modelos_de_Controladores
     {
         private readonly ClsRepositorioTipoMovimiento _RepositorioTipoMovimiento;
 
-        public int _PkTipoMovimiento { get; set; }
-        public string _NombreTipoMovimiento { get; set; }
-        public string _DescripcionTipoMovimiento { get; set; }
-        public string _SignoTipoMovimiento { get; set; }
-        public DateTime _CreatedAt { get; set; }
-        public DateTime _UpdatedAt { get; set; }
+        public int pkidCliente { get; set; }
+        public string nombreCliente { get; set; }
+        public string direccionCliente { get; set; }
+        public string telefonoCliente { get; set; }
+        public int estadoCliente { get; set; }
 
         public ClsModelosTipoMovimiento()
         {
@@ -37,12 +36,11 @@ namespace CapaControlador_Inventario_Logistica.Modelos_de_Controladores
             {
                 ListaTipoMovimiento.Add(new ClsModelosTipoMovimiento
                 {
-                    _PkTipoMovimiento = Item.Pk_TipoMovimiento,
-                    _NombreTipoMovimiento = Item.NombreTipoMovimiento,
-                    _DescripcionTipoMovimiento = Item.DescripcionTipoMovimiento,
-                    _SignoTipoMovimiento = Item.SignoTipoMovimiento,
-                    _CreatedAt = Item.CreatedAt,
-                    _UpdatedAt = Item.UpdatedAt
+                    pkidCliente = Item.pk_idCliente,
+                    nombreCliente = Item.nombreCliente,
+                    direccionCliente = Item.direccionCliente,
+                    telefonoCliente = Item.telefonoCliente,
+                    estadoCliente = Item.estadoCliente,
                 });
             }
             return ListaTipoMovimiento;

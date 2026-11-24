@@ -13,7 +13,7 @@ namespace CapaModelo_Inventario_Logistica.Repositorios
 
         protected ClsRepositorio()
         {
-            _CadenaConexion = "Dsn=EmbutidosS.A";
+            _CadenaConexion = "Dsn=asis22k26";
         }
 
         protected OdbcConnection LogisticaMetObtenerConexion()
